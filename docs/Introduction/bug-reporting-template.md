@@ -64,7 +64,7 @@ Please attach the following log files to your report:
 The log files can be found in the following directory:
 
 - **Windows**: `C:\Users\[username]\Documents\NeoRadar\logs\`
-- **macOS & Linux**: `~\Documents\NeoRadar/logs/`
+- **macOS & Linux**: `~\Documents\NeoRadar\logs\`
 
 ### Relevant Timestamps
 
