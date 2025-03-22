@@ -22,4 +22,4 @@ NeoRadar Client is currently in alpha testing phase. This early release allows u
 
 Your feedback is crucial to improving NeoRadar Client. We will shortly be opening up our issue tracking platform. In the meantime, please note any issues you encounter for future reporting, otherwise refer to your invitee for more information.
 
-When reporting bugs, please use our [Bug Report Template](./introduction/bug-report) to provide all necessary information, including your client version, what you were doing, expected vs. actual results, and relevant log files with timestamps.
+When reporting bugs, please use our [Bug Report Template](./bug-report) to provide all necessary information, including your client version, what you were doing, expected vs. actual results, and relevant log files with timestamps.
