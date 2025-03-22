@@ -72,7 +72,7 @@ const config: Config = {
         // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/neoradar-project/issues/issues/new/choose",
-          label: "GitHub",
+          label: "Report an Issue",
           position: "right",
         },
       ],
