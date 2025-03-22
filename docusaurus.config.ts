@@ -60,7 +60,7 @@ const config: Config = {
         src: "img/FullLogoLight.svg", // Set the path to your logo image
         srcDark: "img/FullLogoDark.svg", // Set the path to your dark mode logo image
         width: 120,
-        href: "/introduction/getting-started", // Set the URL to redirect when the logo is clicked
+        href: "/getting-started", // Set the URL to redirect when the logo is clicked
       },
       items: [
         {
