@@ -57,8 +57,10 @@ const config: Config = {
     navbar: {
       logo: {
         alt: "NeoRadar Logo", // Set an appropriate alt text for your logo
-        src: "img/FullLogo.svg", // Set the path to your logo image
+        src: "img/FullLogoLight.svg", // Set the path to your logo image
+        srcDark: "img/FullLogoDark.svg", // Set the path to your dark mode logo image
         width: 120,
+        href: "/introduction/getting-started", // Set the URL to redirect when the logo is clicked
       },
       items: [
         {
