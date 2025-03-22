@@ -1,9 +1,9 @@
 ---
 slug: /systems/expressions
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Expressions and Rules System
+# Expressions and Rules
 
 ## Overview
 
@@ -47,6 +47,7 @@ Basic comparisons take the form:
 ```
 
 For example:
+
 ```json
 ["==", "altitude", 10000]
 ```
@@ -55,17 +56,17 @@ This checks if the altitude is equal to 10000 feet.
 
 #### Available Comparison Operators
 
-| Operator | Description |
-|----------|-------------|
-| `==` | Equality |
-| `!=` | Inequality |
-| `<` | Less than |
-| `<=` | Less than or equal to |
-| `>` | Greater than |
-| `>=` | Greater than or equal to |
-| `beginsWith` | String begins with |
-| `endsWith` | String ends with |
-| `contains` | String contains |
+| Operator     | Description              |
+| ------------ | ------------------------ |
+| `==`         | Equality                 |
+| `!=`         | Inequality               |
+| `<`          | Less than                |
+| `<=`         | Less than or equal to    |
+| `>`          | Greater than             |
+| `>=`         | Greater than or equal to |
+| `beginsWith` | String begins with       |
+| `endsWith`   | String ends with         |
+| `contains`   | String contains          |
 
 ### String Operations
 
@@ -76,6 +77,7 @@ Special string operations:
 ```
 
 For example:
+
 ```json
 ["notEmpty", "scratchpad"]
 ```
@@ -84,10 +86,10 @@ This checks if the scratchpad has text in it.
 
 #### Available String Operators
 
-| Operator | Description |
-|----------|-------------|
+| Operator   | Description                                |
+| ---------- | ------------------------------------------ |
 | `notEmpty` | Checks if a variable has a non-empty value |
-| `isEmpty` | Checks if a variable is empty or zero |
+| `isEmpty`  | Checks if a variable is empty or zero      |
 
 ### Logical Operations
 
@@ -98,22 +100,26 @@ Logical operations take the form:
 ```
 
 For example:
+
 ```json
-["AND", [
-  ["==", "altitude", 10000],
-  ["==", "groundSpeed", 250]
-]]
+[
+  "AND",
+  [
+    ["==", "altitude", 10000],
+    ["==", "groundSpeed", 250]
+  ]
+]
 ```
 
 This checks if BOTH the altitude is 10000 AND the ground speed is 250.
 
 #### Available Logical Operators
 
-| Operator | Description |
-|----------|-------------|
-| `AND` | All expressions must be true |
-| `OR` | At least one expression must be true |
-| `NOT` | Inverts the result of the expression |
+| Operator | Description                          |
+| -------- | ------------------------------------ |
+| `AND`    | All expressions must be true         |
+| `OR`     | At least one expression must be true |
+| `NOT`    | Inverts the result of the expression |
 
 ### Referenced Expressions
 
@@ -151,6 +157,7 @@ You can build complex logic by combining references and nested expressions:
 The expressions system can access variables from several sources:
 
 ### Aircraft Position Data
+
 - `altitude` - Aircraft altitude
 - `agl` - Height above ground level
 - `groundSpeed` - Ground speed in knots
@@ -167,6 +174,7 @@ The expressions system can access variables from several sources:
 - `pressureAltitude` - Pressure altitude
 
 ### Aircraft Data
+
 - `callsign` - Aircraft callsign
 - `type` - Aircraft type
 - `isTimingOut` - Whether the aircraft track is about to time out
@@ -175,6 +183,7 @@ The expressions system can access variables from several sources:
 - `latestTransponderStatus` - Status of the transponder
 
 ### Flight Plan Data
+
 - `flightRule` - Flight rules (IFR/VFR)
 - `rawType` - Raw aircraft type
 - `icaoTransponderEquipment` - ICAO transponder equipment code
@@ -197,6 +206,7 @@ The expressions system can access variables from several sources:
 - `voiceType` - Voice type
 
 ### Flight Plan Route
+
 - `sid` - Standard Instrument Departure
 - `star` - Standard Terminal Arrival Route
 - `isAmended` - Whether the route has been amended
@@ -207,6 +217,7 @@ The expressions system can access variables from several sources:
 - `hadSid` - Whether the route had a SID
 
 ### Controller Data
+
 - `clearedFlightLevel` - Cleared flight level
 - `assignedHeading` - Assigned heading
 - `assignedSpeed` - Assigned speed
@@ -222,6 +233,7 @@ The expressions system can access variables from several sources:
 - `attentionState` - Attention state
 
 ### Computed Data
+
 - `isArrival` - Whether the aircraft is arriving at one of the active airports
 - `isDeparture` - Whether the aircraft is departing from one of the active airports
 - `isMyArrival` - Whether the aircraft is arriving at my airport
@@ -303,10 +315,13 @@ Target symbols can use expressions to determine when they should be applied:
 
 ```json
 {
-  "applyWhen": ["AND", [
-    ["==", "onGround", 1],
-    ["<", "groundSpeed", 5]
-  ]],
+  "applyWhen": [
+    "AND",
+    [
+      ["==", "onGround", 1],
+      ["<", "groundSpeed", 5]
+    ]
+  ],
   "symbol": "parked_aircraft"
 }
 ```

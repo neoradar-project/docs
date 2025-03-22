@@ -11,9 +11,8 @@
         }
   
         .cls-3 {
-          fill: none;
-          opacity: .1;
-          stroke: url(#linear-gradient-2);
+          opacity: .05;
+          fill: url(#linear-gradient-2);
           stroke-miterlimit: 10;
           stroke-width: 20px;
         }
@@ -21,7 +20,7 @@
       <linearGradient id="linear-gradient" x1="136.37" y1="675.92" x2="917.11" y2="172.55" gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="#0b132f"/>
         <stop offset=".4" stop-color="#12163d"/>
-        <stop offset="1" stop-color="#211d5c"/>
+        <stop offset="7" stop-color="#211d5c"/>
       </linearGradient>
       <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
         <feOffset dx="5" dy="5"/>

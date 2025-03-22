@@ -55,15 +55,15 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     navbar: {
-      title: "NeoRadar",
       logo: {
         alt: "NeoRadar Logo", // Set an appropriate alt text for your logo
-        src: "img/logo.svg", // Set the path to your logo image
+        src: "img/FullLogo.svg", // Set the path to your logo image
+        width: 120,
       },
       items: [
         {
           type: "doc",
-          docId: "getting-started",
+          docId: "Introduction/getting-started",
           position: "left",
           label: "Getting Started", // Customize the label for your documentation
         },
