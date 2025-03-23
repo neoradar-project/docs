@@ -17,6 +17,11 @@ Each system contains:
 - Targets configuration (targets.[yaml/json])
 - Map style override (mapstyle.[yaml/json])
 
+The systems folder also contains the following two files which are shared across all systems:
+
+- Expressions (expressions.[json/yaml])
+- Lists (lists.[json/yaml])
+
 ## Formatting of the files
 
 You can freely use JSON or YAML, the system will automatically parse and pick it up based on file extension.
