@@ -52,6 +52,10 @@ const config: Config = {
     ],
   ],
 
+  plugins: [[require.resolve('docusaurus-lunr-search'), {
+    highlightResult: true,
+  }]],
+
   themeConfig: {
     // Replace with your project's social card
     navbar: {
