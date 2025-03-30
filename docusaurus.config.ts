@@ -52,6 +52,10 @@ const config: Config = {
     ],
   ],
 
+  plugins: [[require.resolve('docusaurus-lunr-search'), {
+    highlightResult: true,
+  }]],
+
   themeConfig: {
     // Replace with your project's social card
     navbar: {
@@ -76,6 +80,9 @@ const config: Config = {
           position: "right",
         },
       ],
+    },
+    footer: {
+      copyright: "(c) NeoRadar Team, 2025 (unless specified otherwise) - ALL INFORMATION THEREIN IS NOT TO BE USED FOR REAL WORLD AVIATION - IT IS ALSO NOT TO BE USED OUTSIDE OF THE VATSIM NETWORK",
     },
     // footer: {
     //   style: "dark",
